@@ -1,0 +1,366 @@
+* {box-sizing: border-box;}
+
+.top {
+  overflow: hidden;
+  background-color: #c39473;
+  font-family: Arial;
+}
+
+.top a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.droplist {
+  float: left;
+  overflow: hidden;
+}
+
+.droplist .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0px;
+}
+
+.top a:hover, .droplist:hover .dropbtn {
+  background-color: brown;
+}
+
+/* Dropdown content (hidden by default) */
+.droplist-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.droplist-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.droplist-content a:hover {
+  background-color: rgb(233, 139, 139);
+}
+
+/* Show the dropdown menu on hover */
+.droplist:hover .droplist-content {
+  display: block;
+}
+
+body {font-family: Verdana, sans-serif; 
+      margin:0;}
+
+.products{padding: 10px 250px 10px 320px;}
+
+/*Sign up and Sign in*/
+.signUp {padding: 16px;}
+
+/* Full-width input fields */
+input{
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;}
+
+input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;}
+
+/* Overwrite default styles of hr */
+hr {border: 1px solid #d5b49f;
+    margin-bottom: 25px;}
+
+/* Set a style for the submit/register button */
+.btn {background-color: brown;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;}
+
+.signUpbtn:hover {opacity:1;
+                  background-color: lightsalmon;}
+
+/* Add a background color and some padding around the form */
+.comment {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;}
+
+/* Add a blue text color to links */
+a {color: dodgerblue;}
+
+.signin {background-color: #f1f1f1;
+  text-align: center;}
+
+.footer{font-size: smaller;
+text-align: center;
+background-color: #c39473;
+margin:10px;
+padding: 15px;
+}
+
+.cart {
+  box-shadow: 0 4px 8px 0 #b5b5b5;
+  max-width: 300px;
+  text-align: center;
+  font-family: arial;
+display: inline-block;
+padding: 20px;
+margin: 15px;
+width: 500px;}
+
+.cost {
+  color: #c39473;
+  font-size: 22px;}
+
+.cart button{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #d5b49f;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.cart button:hover {opacity: 0.7;}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;}
+
+.fa-facebook {
+  background: darkblue;
+  color: white;}
+.fa-twitter {
+  background: lightskyblue;
+  color: white;}
+.fa-google {
+  background: #dd4b39;
+  color: white;}
+.fa-youtube {
+  background: #bb0000;
+  color: white;}
+.fa-instagram {
+  background: purple;
+  color: white;}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+main {padding: 20px;}
+
+/* Slideshow container */
+.slideshow-container {
+          max-width: 1000px;
+          position: relative;
+          margin: auto;}
+
+/* Next & previous buttons */
+.prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          padding: 16px;
+          margin-top: -22px;
+          color: white;
+          font-weight: bold;
+          font-size: 18px;
+          transition: 0.6s ease;
+          border-radius: 0 3px 3px 0;
+          user-select: none;}
+
+/* Position the "next button" to the right */
+.next {right: 0;
+      border-radius: 3px 0 0 3px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+
+/* Caption text */
+.text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;}
+
+/* Number text (1/3 etc) */
+.numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;}
+
+/* The dots/bullets/indicators */
+.dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;}
+
+.active, .dot:hover {background-color: #717171;}
+
+/* Fading animation */
+.fade{
+      animation-name: fade;
+      animation-duration: 1.5s;}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}}
+
+h2{background-color: #e3e4de;
+padding: 10px;
+text-align: center;}
+
+input[type=text], select, textarea {
+            width: 100%; /* Full width */
+            padding: 12px; /* Some padding */ 
+            border: 1px solid #ccc; /* Gray border */
+            border-radius: 4px; /* Rounded borders */
+            box-sizing: border-box; /* Make sure that padding and width stays in place */
+            margin-top: 6px; /* Add a top margin */
+            margin-bottom: 16px; /* Bottom margin */
+            resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */ }
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+            background-color: brown;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {background-color: lightsalmon;}
+
+/* Two-column layout */
+.col {
+      float: left;
+      width: 50%;
+      margin: auto;
+      padding: 0 50px;
+      margin-top: 6px;}
+
+/* Clear floats after the columns */
+.row:after {
+            content: "";
+            display: table;
+            clear: both;}
+
+.pay { margin: 0 210px 0 160px;
+  padding: 1px 10px 20px 10px;
+  background-color: #E3E4DE;
+             }
+
+.return {
+float: inline-start;
+
+}
+
+h1{text-align: center;}
+
+#cash {
+margin: 0 210px 0 160px;
+padding: 1px 10px 10px 10px;
+background-color:#C39473 ;
+border: solid #ec9a5f;
+text-align: center;
+}  
+form{
+margin: 0 210px 0 160px;
+padding: 1px 10px 20px 10px;
+background-color: #E3E4DE;
+}
+
+
+.contact{
+text-align: left;
+}
+
+.faq{
+text-align: left;
+text-shadow: 2px 2px  5px  #333;
+}
+
+#cart{
+text-align: center;
+align-content: center;
+}
+
+.imgcart{
+margin-left: 250px;
+}
+.imgcart button{
+padding: 10px 30px;
+background-color: red;
+text-align: center;
+color: white;
+font-size: large;
+margin-left: 250px;
+cursor: pointer;
+}
+.imgcart button:active{
+transform: translateY(4px);
+}
+
+.transferbor{
+padding-top: 1px;
+padding-bottom: 1px;
+padding-left: 0px;
+padding-right:0px ;
+background-color: #d5b49f;
+text-align: center;
+}
+
+.pay button{font-size: large;}
+ 
+.pay input{font-size: large;
+padding: 1px 2px 4px 2px;
+border: thin black;
+}
+
+.button{margin-left: 700px;}
+
+.button input{font-size: larger;}
+
+#logo{
+  margin-left: 500px;
+}

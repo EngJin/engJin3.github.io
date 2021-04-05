@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Credit Method</title>
+        <link rel="stylesheet" href="Valuezone.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+      <div class="top">
+        <a href="Index.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="addcart.html">Add to Cart</a>
+        <div class="droplist">
+          <button class="dropbtn">Account<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="droplist-content">
+            <a href="SignIn.html">Sign In</a>
+            <a href="SignUp.html">Sign Up</a>
+          </div>
+        </div>
+      </div>
+
+          <form action="action.php" method="GET" >
+            <label><b>Payment Selection:</b></label>
+          <br><br>
+            <input type="radio" name="paymentselect" value="creditcard" onclick='creditCard()' checked>
+            <label><b>Credit Card/Debit Card</b></label>  
+            <br>
+            <img src="credits.jpeg" alt="credit card" width="250" height="150">
+            <br><br>
+            <input type="radio" name="paymentselect" value="onlinebanking" onclick='onlinetransfer()'>
+            <label><b>Online Transfer</b></label>
+            <br>
+            <img src="transferss.jpg" alt="online banking">
+            <br><br>
+            <input type="radio" name="paymentselect" value="cashondelivery" onclick='cashOnDelivery()'>
+            <label><b>Cash On Delivery</b></label>
+            <br>
+            <img src="cashonde.jpeg" alt="online banking" width="250" height="150">
+            <br><br>              
+    </form>
+    <script>
+        function creditCard()
+        {
+          window.location="credit.html"
+        }
+      
+        function onlinetransfer()
+        {
+          window.location="transfer.html"
+        }
+      
+        function cashOnDelivery()
+        {
+          window.location="cash.html"
+        }
+      </script>
+
+        <form action="action.php" method="GET" class="pay">
+            <label>Accepted Cards</label>
+            <br><br>
+            <input type="image" src="cardaccepted.png" alt="card accepted" width="250" height="100">
+            <br><br>
+            <label>Name on Card: </label>
+            <input type="text" size="20" maxlength="20" required>
+            <br><br>
+            <label>Card Number: </label>
+            <input type="text" placeholder="1234-2234-3234-4234" required>
+            <br><br>
+            <label>Expired Date: </label>
+            <input type="text" placeholder="DD/MM" required>
+            <br><br>
+            <label>Security Code: </label>
+            <input type="text" placeholder="321" required>
+            <br><br>
+            <div>
+                <input type="submit" onclick="alert('Thank you for your order. We will deliver it as soon as possible');">
+                <input type="reset">
+            </div>
+        </form>
+
+        <footer class="footer">
+
+          <h2>Connect with us</h2>
+          <div class="fa">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/login/" class="fa fa-twitter"></a>
+            <a href="https://www.google.com/" class="fa fa-google"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+          </div>
+
+          <br><br>
+
+          <h2>Informations</h2>
+            <h3><a href="FAQ.html">FAQ</a></h3>
+            <h3><a href="privatepolicy.html">Privacy Policy</a></h3>
+            <h3><a href="termofuse.html">Terms of Use</a></h3>
+
+                
+          <br><br>
+          <i>Valuezone SDN BHD(1252960-T)</i>
+          <br><br>
+          <i>Copyright &copy; 2021 Valuzone Sdn Bhd</i>
+      </footer>
+    </body>
+</html>
